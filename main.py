@@ -34,7 +34,8 @@ def initEngine(time):
             'timeout_match': -1,
             'timeout_turn' : time,
             'game_type'    : 1,
-            'rule'         : 1
+            'rule'         : 1,
+            'thread_num'   : 4
             }
     CONTROLLER.setConfigures(config)
     CONTROLLER.setTimeMatch(5400)
@@ -54,7 +55,7 @@ def get_move(board, size, time):
 
     move = getMoveFromBoard(board)
     if move is None:
-        CONTROLLER.startNewGame()
+        CONTROLLER.send('begin')
     else:
         CONTROLLER.playMove(move)
     engineMove = CONTROLLER.get('move')

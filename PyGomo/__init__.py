@@ -145,7 +145,7 @@ class IProtocol(ABC):
     def playMove(self, move: str):
         ...
 
-    def setPos(self, listPos: [str]):
+    def setPos(self, listPos: [str]): # type: ignore
         ...
 
     def stop(self):
@@ -199,7 +199,7 @@ class GomocupProtocol(IProtocol):
             return True
         return False
 
-    def setPos(self, listOfMove: [str]):
+    def setPos(self, listOfMove: [str]): # type: ignore
         self.__engine.send('board')
         for idx, move in enumerate(listOfMove):
             if len(listOfMove) % 2 == idx % 2:
@@ -238,7 +238,7 @@ class Controller:
         self.__engine = engine
         self.__protocol.setEngine(self.__engine)
         self.__timeManage = TimeManage(self.__engine.ID)
-        self.__timeManage.setting : TimeSetting = TimeSetting()
+        self.__timeManage.setting : TimeSetting = TimeSetting() # type: ignore
 
     def setProtocol(self, protocol: IProtocol):
         self.__protocol = protocol
@@ -271,11 +271,8 @@ class Controller:
     def playMove(self, move: str):
         self.__protocol.playMove(move)
 
-    def setPos(self, listPos: [str]):
+    def setPos(self, listPos: [str]): # type: ignore
         self.__protocol.setPos(listPos)
-
-    def startNewGame(self):
-        self.__protocol.send('begin')
 
     def stop(self):
         self.__protocol.stop()

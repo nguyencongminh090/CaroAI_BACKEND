@@ -3,12 +3,12 @@ import numpy
 from time import perf_counter as clock
 
 
-# ENGINE     = PyGomo.Engine(r'pbrain_embryo.exe')
-# PROTOCOL   = PyGomo.GomocupProtocol()
-# CONTROLLER = PyGomo.Controller()
+ENGINE     = PyGomo.Engine(r'pbrain_embryo.exe')
+PROTOCOL   = PyGomo.GomocupProtocol()
+CONTROLLER = PyGomo.Controller()
 
-# CONTROLLER.setProtocol(PROTOCOL)
-# CONTROLLER.setEngine(ENGINE)
+CONTROLLER.setProtocol(PROTOCOL)
+CONTROLLER.setEngine(ENGINE)
 
 BOARD = ...
 TIME  = ...

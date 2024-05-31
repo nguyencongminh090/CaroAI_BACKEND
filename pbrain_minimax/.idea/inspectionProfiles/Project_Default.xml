@@ -1,0 +1,81 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyBroadExceptionInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="12">
+            <item index="0" class="java.lang.String" itemvalue="pywin32" />
+            <item index="1" class="java.lang.String" itemvalue="keyboard" />
+            <item index="2" class="java.lang.String" itemvalue="customtkinter" />
+            <item index="3" class="java.lang.String" itemvalue="numpy" />
+            <item index="4" class="java.lang.String" itemvalue="mss" />
+            <item index="5" class="java.lang.String" itemvalue="opencv_python" />
+            <item index="6" class="java.lang.String" itemvalue="Pillow" />
+            <item index="7" class="java.lang.String" itemvalue="psutil" />
+            <item index="8" class="java.lang.String" itemvalue="darkdetect" />
+            <item index="9" class="java.lang.String" itemvalue="chess" />
+            <item index="10" class="java.lang.String" itemvalue="typing_extensions" />
+            <item index="11" class="java.lang.String" itemvalue="cv2" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E722" />
+          <option value="E221" />
+          <option value="E203" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N806" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="cv2.*" />
+          <option value="main.Singleton.instance" />
+          <option value="GUI.Singleton.*" />
+          <option value="GUI.NameDialog.label" />
+          <option value="GUI.NameDialog.entry" />
+          <option value="GUI.NameDialog.button" />
+          <option value="GUI.Notify.*" />
+          <option value="GUI.YesNoDialog.*" />
+          <option value="Compile.GUI.Singleton.*" />
+          <option value="Compile.GUI.NameDialog.*" />
+          <option value="Compile.GUI.YesNoDialog.*" />
+          <option value="Compile.GUI.Notify.*" />
+          <option value="Compile.ViewModel.Singleton.*" />
+          <option value="Compile.ViewModel.NameDialog.*" />
+          <option value="Compile.ViewModel.YesNoDialog.*" />
+          <option value="Compile.ViewModel.Notify.*" />
+          <option value="main.client.Singleton.*" />
+          <option value="main.client.NameDialog.*" />
+          <option value="main.client.YesNoDialog.*" />
+          <option value="main.client.Notify.*" />
+          <option value="int.*" />
+          <option value="control.protocol.Engine.*" />
+          <option value="webbrowser.Chrome.find_element" />
+          <option value="webbrowser.Chrome.switch_to" />
+          <option value="webbrowser.Chrome.window_handles" />
+          <option value="webbrowser.Chrome.get" />
+          <option value="bool.configure" />
+          <option value="RecordGomoku.Engine.Engine._Engine__engine" />
+          <option value="RecordGomoku.Engine.Engine.*" />
+          <option value="main.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
